@@ -1,0 +1,8 @@
+# REiS OSINT v3.0 — Hamza Hack Team
+# Zorunlu bağımlılıklar
+requests>=2.31.0
+colorama>=0.4.6
+
+# Önerilen (tam işlevsellik için)
+beautifulsoup4>=4.12.0
+groq>=0.9.0
