@@ -1143,8 +1143,8 @@ def save_report(data, intel_results, dorks, links, ai_result):
             if gh.get("github_repolar"):
                 f.write(f"  Repolar ({len(gh['github_repolar'])}):\n")
                 for r in gh["github_repolar"][:10]:
-                    f.write(f"    • {r['isim']} [{r['dil']}] ⭐{r['yildiz']} — {r.get('aciklama','')[:60]}\n")
-
+                    f.write(f"    • {r['isim']} [{r['dil']}] ⭐{r['yildiz']} — {(r.get('aciklama') or '')[:60]}\n")
+    
         uid_data = intel_results.get("username", {})
         if uid_data:
             f.write("\nPLATFORM ENUMERATION:\n")
